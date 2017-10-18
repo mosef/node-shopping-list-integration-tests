@@ -83,4 +83,18 @@ describe("recipes", function() {
         res.should.have.status(204);
       });
   });
+
+  it("should respond with 400", function() {
+    const newRecipe = {
+      name: "noodles"
+    };
+    return chai
+      .request(app)
+      .post("/recipes")
+      .send(newRecipe)
+      .catch(function(res) {
+        res.should.have.status(400);
+       
+      });
+  });
 });
