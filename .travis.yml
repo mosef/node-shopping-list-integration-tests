@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: IgmAkevPbZUDNe213NHFXrNmxkWuhSJkGFuBPg3lrl6VSd3GWGditnUzhfLrHhekPhv/k+RfRcZ17A/SPoSlLqJLh95O+Qm7Rug6EMAz1RNw+JJ3E7NKuNCxIpnr5Hn01XoesFU40vNPBWBLN8Wa6FTpl4KxT6GXZio1tr2OnJ/YT4hwE/bozFh9x0yD/Mz3O0iK4rzi2ZLWVtZgxpl/00HBaCrkYap1kfC6rozuO43UkNlfirv1kv0w3fAJzNJ9Mc5L1GRRhI7osKJVULt6I5Y2+7OuwLYDqqjCPqTcTZlF8Y9HWFQMgmPnKlkRYG9ORdNadP20/r4bLZ/mo5Ts9SCmXvkvcz6OspowOmFkSP+/Oic2NjES3ymWi7XJs0rEXQra9qPX0zXWM5k1DZa6jRlzoogySbqId4S1Hh22WiSB/2dSvx65ZSZCmjmH+dOPCdx+Wprh35DUVPsSkD+NwZ9Lf+8mYT12Uv1QiOyg+OsdbUXB/89N1cvoLoczoAA/8tdhUBH/fmvQ8OMM80nH/iYBnjFFZfEgjtz3gdA9ID6SWDeTHtC1QiSXviRI9wnNsesP68/+zGZHKsSCOpb5klFTN0FkK116ewfO/FlkHctiQjDlMiMQGrWKG2PdLyYa0YYuJYVPrMuZmv5v+ObSXJF8JZ6ZKfwZpXla/C/7XRU=
+  app: blooming-retreat-86006
+  on:
+    repo: mosef/node-shopping-list-integration-tests
